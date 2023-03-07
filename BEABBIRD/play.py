@@ -44,3 +44,7 @@ you['인당 유흥업체 수'] = you['영업상태구분코드']/pop['인구']
 # %%
 you
 # %%
+import pandas as pd
+t = pd.read_csv('C:/Users/dddf/Desktop/time_.csv')
+t   
+# %%
