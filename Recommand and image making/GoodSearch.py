@@ -39,7 +39,7 @@ def find_sim_product(df, sorted_ind, similarity, product_description, top_n = 10
     new_df = df.iloc[similar_indexes].copy()
     # new_df['similarity'] = similarity[product_index,:(top_n)]
     return new_df
-product_copy_df = pd.read_csv('../')
+product_copy_df = pd.read_csv('product_copy.csv')
 # 사용자 입력값 받기
 def submit():
     for widget in window.winfo_children():
@@ -53,7 +53,7 @@ def submit():
     data = {'입력값': [value]}
     df = pd.DataFrame(data)
     
-    product_copy_df = pd.read_csv('Recommand and image making\\product_copy.csv')
+    product_copy_df = pd.read_csv('product_copy.csv')
 
 
     count_vect = CountVectorizer(min_df=0, ngram_range=(1,2))
